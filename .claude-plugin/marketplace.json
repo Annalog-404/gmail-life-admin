@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "gmail-life-admin",
-      "source": ".",
+      "source": "./",
       "description": "Life admin for your Gmail: clean up, organize, never miss a bill, and know what needs you today.",
       "category": "productivity",
       "tags": [
