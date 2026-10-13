@@ -1,0 +1,26 @@
+{
+  "name": "gmail-life-admin",
+  "displayName": "Gmail Life Admin",
+  "version": "1.0.0",
+  "description": "Life admin for your Gmail: clean up your inbox, sort mail into labels, put bill due dates on your calendar, and get a daily summary of what needs you. Asks before every change. No coding needed.",
+  "author": {
+    "name": "Annalog-404",
+    "url": "https://github.com/Annalog-404"
+  },
+  "homepage": "https://github.com/Annalog-404/gmail-life-admin",
+  "repository": "https://github.com/Annalog-404/gmail-life-admin",
+  "license": "MIT",
+  "keywords": [
+    "gmail",
+    "email",
+    "inbox",
+    "life-admin",
+    "personal-finance",
+    "household",
+    "bills",
+    "calendar",
+    "unsubscribe",
+    "labels",
+    "digest"
+  ]
+}

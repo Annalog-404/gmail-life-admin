@@ -1,0 +1,23 @@
+{
+  "name": "annalog-404",
+  "description": "Agent Skills and plugins by Annalog-404",
+  "owner": {
+    "name": "Annalog-404",
+    "url": "https://github.com/Annalog-404"
+  },
+  "plugins": [
+    {
+      "name": "gmail-life-admin",
+      "source": ".",
+      "description": "Life admin for your Gmail: clean up, organize, never miss a bill, and know what needs you today.",
+      "category": "productivity",
+      "tags": [
+        "gmail",
+        "email",
+        "life-admin",
+        "personal-finance",
+        "household"
+      ]
+    }
+  ]
+}

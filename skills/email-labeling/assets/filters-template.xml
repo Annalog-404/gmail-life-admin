@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Gmail filter import template for the email-labeling skill.
+  Replace the sender domains with the user's own banks, shops and services.
+  shouldArchive=true means "Skip the inbox".
+  Import via Gmail Settings > Filters and Blocked Addresses > Import filters.
+-->
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+  <title>Mail Filters</title>
+
+  <!-- Stay in inbox -->
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='example-bank.com'/>
+    <apps:property name='label' value='Finance/Example Bank'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='example-power.com OR example-water.com OR example-isp.com OR example-telco.com'/>
+    <apps:property name='label' value='Bills &amp; Utilities'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='example-tax.gov OR example-socialsecurity.gov'/>
+    <apps:property name='label' value='Government'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='hasTheWord' value='from:(noreply-accounts@google.com OR no-reply@accounts.google.com) OR subject:(&quot;security alert&quot; OR &quot;verification code&quot; OR &quot;password was changed&quot;)'/>
+    <apps:property name='label' value='Accounts &amp; Security'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='example-insurer.com OR example-clinic.com'/>
+    <apps:property name='label' value='Health &amp; Insurance'/>
+  </entry>
+
+  <!-- Skip inbox -->
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='jobalerts-noreply@linkedin.com OR jobs-noreply@linkedin.com OR indeed.com OR glassdoor.com'/>
+    <apps:property name='label' value='Career/Job Alerts'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='amazon.com OR googleplay-noreply@google.com'/>
+    <apps:property name='label' value='Shopping &amp; Orders'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='booking.com OR agoda.com OR klook.com'/>
+    <apps:property name='label' value='Trips &amp; Travel'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='coursera.org OR udemy.com OR deeplearning.ai'/>
+    <apps:property name='label' value='Learning'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name='from' value='netflix.com OR spotify.com OR payments-noreply@google.com OR no_reply@email.apple.com'/>
+    <apps:property name='label' value='Subscriptions'/>
+    <apps:property name='shouldArchive' value='true'/>
+  </entry>
+</feed>
